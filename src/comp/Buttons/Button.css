@@ -1,0 +1,120 @@
+/* 1_ blue button style */
+/* 2_red button style */
+
+/* 1------------------------------------------------------------------------------- */
+.add-tasks {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.add-tasks button {
+  border: none;
+}
+
+.add-tasks .c-button {
+  background: linear-gradient(
+    140deg,
+    rgba(75, 118, 200, 1) 0%,
+    rgb(92, 133, 211) 100%
+  );
+  border-radius: 45px;
+  font-size: 12px;
+  text-align: left;
+  padding: 11px 0px 11px 0px;
+  border: 4px solid rgb(92, 91, 91) !important;
+  border-style: outset;
+  box-shadow: -6px -5px 18px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.add-tasks .c-button .c-main {
+  border-radius: 45px;
+  color: rgba(255, 255, 255, 1);
+  padding: 11px 25px 11px 2px;
+  box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0);
+  transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.add-tasks .c-ico .c-blur {
+  background: linear-gradient(
+    318deg,
+    rgba(75, 118, 200, 1) 0%,
+    rgba(31, 70, 145, 1) 100%
+  );
+  border-radius: 100%;
+  margin-left: 0;
+  padding: 8px 23px;
+  filter: blur(1px);
+  text-align: center;
+}
+
+.add-tasks .c-ico {
+  position: relative;
+  margin-right: 20px;
+}
+
+.add-tasks .c-ico .ico-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* end style blue button */
+
+
+
+/* 2-------------------------------------------------------------------------------------------------- */
+.btn-red {
+  position: relative;
+  font-size: 15px;
+  margin: 10px auto 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8em 2em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(235, 65, 65);
+  cursor: pointer;
+}
+
+
+.btn-red:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-red:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-red::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-red::after {
+  background-color: #db2222;
+}
+
+.btn-red:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+

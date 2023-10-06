@@ -1,0 +1,215 @@
+main .button-tasks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 60px;
+}
+main .button-tasks div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .button-tasks button {
+  background-color: rgb(27, 170, 231);
+  padding: 5px 10px;
+  border: 2px solid rgb(27, 170, 231);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 0.5em;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  color: whitesmoke;
+}
+
+main .button-tasks button:hover,
+select:hover {
+  border: 2px solid white;
+  color: rgb(216, 213, 213);
+}
+
+select {
+  background: #686666;
+  border: 0;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 0.5em;
+  text-transform: capitalize;
+  color: whitesmoke;
+  border: 2px solid #686666;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.article-tasks {
+  margin-top: 70px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.article-tasks article {
+  border: 2px solid rgb(71, 71, 71);
+  width: 300px;
+  height: 170px;
+  padding: 10px 10px;
+  transition: 0.1s;
+  position: relative;
+  cursor: pointer;
+}
+
+.Dark .article-tasks article {
+  border: 2px solid whitesmoke;
+  position: relative;
+}
+
+.article-tasks article:hover {
+  border-left: 8px teal solid;
+}
+
+.Dark .article-tasks article p,
+.Dark .article-tasks article h2,
+.Dark .article-tasks article ul li {
+  color: whitesmoke;
+}
+
+.article-tasks article p,
+.article-tasks article h2,
+.article-tasks article ul li {
+  color: rgb(56, 54, 54);
+}
+
+.article-tasks article h2 {
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.article-tasks article ul li {
+  font-size: 13px;
+  font-weight: bold;
+
+  line-height: 29px;
+  text-align: left;
+}
+
+
+
+.parent-add-task-modal {
+  text-align: left;
+  margin-top: 120px;
+  height: 100%;
+}
+
+.input-style {
+  border: 2px solid rgb(187, 184, 184);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #353434;
+  text-transform: capitalize;
+}
+
+.parent-add-task-modal .container-input-button {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.green-btn {
+  all: unset;
+  background-color: teal;
+  color: whitesmoke;
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.green-btn:hover {
+  background-color: rgb(7, 70, 70);
+}
+
+.parent-add-task-modal li {
+  font-size: 11px;
+  color: #353434;
+  text-transform: capitalize;
+  list-style: circle;
+  list-style-position: inside;
+  margin-bottom: 5px;
+}
+
+main .container-taskadded {
+  background-color: rgb(117, 212, 204);
+  padding: 10px 0 10px 20px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  transition: 1s;
+}
+
+main .container-taskadded .taskadded {
+  color: rgb(78, 78, 78) !important;
+  font-size: 15px;
+
+  text-transform: capitalize;
+}
+
+.fa-circle-check {
+  font-size: 15px;
+  margin-left: 5px;
+  color: rgb(78, 78, 78) !important;
+}
+.task-time {
+  font-size: 11px;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  color: #353434 !important;
+  
+}
+
+
+
+/* responsive style----------------------------------------------------- */
+@media only screen and (max-width: 430px) {
+  main .button-tasks button,
+  select {
+    width: max-content;
+    padding: 4px 8px;
+
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main .button-tasks button,
+  select {
+    width: max-content;
+    padding: 4px 5px;
+
+    font-size: 11px;
+  }
+  main .button-tasks div,
+  main .button-tasks {
+    gap: 5px;
+  }
+  .article-tasks article {
+    width: 250px;
+  }
+  .article-tasks article h2 {
+    font-size: 20px;
+  }
+  .add-tasks .c-button {
+    font-size: 11px;
+  }
+}

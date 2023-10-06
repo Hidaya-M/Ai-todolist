@@ -1,0 +1,143 @@
+.edit-container .title-task h1 input {
+  color: rgb(70, 69, 69);
+  background: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  outline: none;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  caret-color: rgb(102, 154, 231);
+  width: fit-content;
+  margin-right: 20px;
+}
+
+.edit-container {
+  min-height: calc(100vh - 133px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.edit-container .title-task h1 .fa-pen-to-square {
+  color: rgb(70, 69, 69);
+}
+
+.edit-container .title-task {
+  text-align: center;
+  margin-top: 50px;
+}
+.edit-container .content-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.edit-container .content-task .time-complet {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit-container .content-task .time-complet p,
+.edit-container .content-task .time-complet label {
+  color: rgb(70, 69, 69);
+}
+
+.edit-container .content-task .time-complet .chekbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.edit-container .content-task .content {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit-container .content-task .content .content-task-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-container .content-task .content .content-task-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.edit-container .content-task .content .content-task-container div p {
+  color: rgb(70, 69, 69);
+  text-transform: capitalize;
+}
+
+.fa-trash {
+  color: rgb(226, 53, 53);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fa-trash:hover {
+  color: rgb(235, 93, 93);
+}
+.edit-button-task {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.update-task {
+  animation: subtask 1s;
+}
+@keyframes subtask {
+  0% {
+    scale: 0;
+  }
+
+  50% {
+    scale: 1.09;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+/* start responsive style ------------------------------------------- */
+@media only screen and (max-width: 900px) {
+
+  .edit-container .content-task .time-complet {
+    width: 80%;
+  
+  }
+  .edit-container .content-task .content {
+    width: 80%;
+    
+  }
+  
+  
+  }
+  @media only screen and (max-width: 395px) {
+
+    .label-time{
+      font-size: 13px;
+    
+    }
+    .p-time {
+    font-size: 13px;
+      
+    }
+    
+    
+    }

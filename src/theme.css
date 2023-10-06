@@ -1,0 +1,103 @@
+/* for red button from the comp-------------------- */
+.Dark .btn-red {
+  color: #e0e0e0 !important;
+}
+/* end------------------------------------------ */
+
+/* for modal from comp----------------------- */
+.Dark main .forget-form {
+  background-color: rgb(211, 208, 208);
+}
+/* end------------------------------------ */
+
+/* for edittask ------------------------- */
+.Dark .edit-container .content-task .content .content-task-container div {
+  background: rgba(255, 255, 255, 0.2) !important;
+
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+
+  border: 1px solid rgba(56, 55, 55, 0.18) !important;
+}
+
+.Dark .edit-container .title-task h1 .fa-pen-to-square {
+  color: rgb(219, 216, 216);
+}
+.Dark .edit-container .title-task h1 input {
+  color: rgb(219, 216, 216);
+}
+/* end--------------------------------------------------------------- */
+
+/* for home page -------------------------------- */
+.Dark .text-content h2 {
+  color: whitesmoke !important;
+}
+.Dark .text-content p {
+  color: whitesmoke !important;
+}
+/* end--------------------------------- */
+
+/* for signin from sigh */
+.Dark main .forget-form .InputContainer {
+  background: linear-gradient(to bottom, rgb(80, 80, 82), rgb(156, 155, 155));
+}
+.Dark main .forget-form .beautiful-button {
+  background: linear-gradient(to bottom, #2f2f30, #545457);
+}
+/* end------------------------------------------------ */
+
+/* for alltasks in task page------------------------------- */
+.Dark .one-task ul li {
+  color: whitesmoke !important;
+}
+.Dark .task-time {
+  color: whitesmoke !important;
+}
+
+/* end-------------------------------------------- */
+/* general style-------------------------- */
+.Dark h1 {
+  color: whitesmoke !important;
+}
+.Dark h2 {
+  color: whitesmoke !important;
+}
+
+.Dark label,
+.Dark p {
+  color: whitesmoke !important;
+}
+.Dark .moment {
+  color: rgb(226, 225, 225) !important;
+
+}
+
+.Dark main {
+  color: whitesmoke!;
+}
+.Dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.Dark main {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.Dark .footer-container .footer-bottom , .Dark .header-container .header-top{
+  background-color: rgba(17, 17, 17, 0.885) !important;
+}
+.Dark .fa-moon {
+  display: none;
+}
+/* ==============
+  Light mode
+=================*/
+.Light .fa-sun {
+  display: none;
+}
+/* end------------------------------------ */
+
+
+
+

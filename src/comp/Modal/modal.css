@@ -1,0 +1,56 @@
+main .parent-forget-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.658);
+}
+main .forget-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  width: 420px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0px 15px;
+  animation: mymove 0.8s;
+  overflow-y: auto;
+}
+@keyframes mymove {
+  0% {
+    scale: 0;
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    scale: 1;
+    transform: translateY(0vh);
+  }
+}
+.forget-form .fa-x {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #686867;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.forget-form .fa-x:hover {
+  color: #252523;
+  transform: rotate(360deg);
+  font-size: 30px;
+}
+
+

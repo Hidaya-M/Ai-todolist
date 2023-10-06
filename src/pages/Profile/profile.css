@@ -1,0 +1,50 @@
+main .neuphorism {
+  border-radius: 20px;
+  background: #f2f2f2;
+  box-shadow: inset 20px 20px 14px #d3d3d3, inset -20px -20px 14px #ffffff;
+  min-width: 200px;
+  min-height: 200px;
+  color: #242424 !important;
+  padding: 60px 40px;
+  display: flex;
+  align-items: start;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+main .neuphorism p,
+.Light main .neuphorism .p {
+  font-size: 17px;
+  color: #3d3d3d !important;
+  margin-bottom: 30px !important;
+}
+
+.Dark main .neuphorism {
+  border-radius: 20px;
+  background: #242424;
+  box-shadow: inset 20px 20px 9px #1c1c1c, inset -20px -20px 9px #2c2c2c;
+  color: #f2f2f2 !important;
+}
+
+.Dark main .neuphorism p,
+main .neuphorism .p {
+  color: #e0e0e0 !important;
+}
+
+/* start style responsive-------------------------------------- */
+@media only screen and (max-width: 400px) {
+  main .neuphorism p, .Light main .neuphorism .p  {
+    font-size: 14px;
+    
+}
+.btn-red {
+  font-size: 12px;
+}
+}
+@media only screen and (max-width: 350px) {
+  main .neuphorism p, .Light main .neuphorism .p {
+    font-size: 12px;
+    
+}
+}
+/* end responsive style ---------------------------------------------- */

@@ -1,0 +1,246 @@
+.card {
+  min-width: 250px;
+  padding: 1.9rem 1.2rem;
+  text-align: center;
+  background: rgb(85, 141, 141);
+  border-radius: 10px;
+}
+
+
+
+/*Inputs*/
+.field {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+  border-radius: 4px;
+  padding: 0.3em 1.5em;
+}
+
+.input-icon,
+.fa-user {
+  height: 0.7em;
+  width: 0.7em;
+  fill: #252523;
+}
+
+.fa-user {
+  font-size: 20px;
+  color: #252523;
+  margin-top: -10px;
+}
+
+.input-field {
+  background: none !important;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.input-field::placeholder {
+  color: #252523;
+}
+
+/*Text*/
+.title {
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+/*Buttons*/
+.btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  padding: 0.6em 1em;
+  background-color: #ffeba7;
+  color: #5e6681;
+  box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-link {
+  color: #f5f5f5 !important;
+  display: block;
+  font-size: 13px;
+  transition: color 0.3s ease-out;
+}
+
+/*Hover & focus*/
+.field input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  background-color: #5e6681;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+}
+
+.btn-link:hover {
+  color: #ffeba7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-link:hover .red {
+  border-bottom: rgb(199, 47, 47) 2px solid;
+  padding-bottom: 2px;
+
+  color: #ffeba7;
+}
+
+.btn-forget {
+  transition: 0.3s;
+  margin-top: 10px;
+  color: #f5f5f5 !important;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-forget:hover {
+  
+  letter-spacing: 2px;
+}
+
+main .forget-form .InputContainer {
+  width: 210px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #4aeba8, #a3dcf3);
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+main .forget-form .input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+main .forget-form .beautiful-button {
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #4aeba8, #a3dcf3);
+  /* Gradient background */
+  color: white;
+  /* White text color */
+  font-family: "Segoe UI", sans-serif;
+  /* Stylish and legible font */
+  /* font-weight: bold; */
+  font-size: 12px;
+  /* Large font size */
+  border: none;
+  /* No border */
+  border-radius: 30px;
+  /* Rounded corners */
+  padding: 10px 15px;
+  /* Large padding */
+  cursor: pointer;
+  /* Cursor on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition */
+}
+
+main .forget-form .forget-p {
+  font-size: 14px;
+  color: #2f2f30 !important;
+  line-height: 30px;
+}
+
+/* Hover animation */
+.beautiful-button:hover {
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+/* Click animation */
+.beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Shimmer animation */
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* Particle animation */
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+.pi , .Dark .pi {
+  font-size: 12px;
+  color: #eb4141 !important;
+  margin-top: 18px;
+}
+
+/* start resonsive style ----------------------------- */
+@media only screen and (max-width: 500px) {
+  main .forget-form {
+    
+    width: 320px;
+    height: 320px;
+  
+}
+
+
+}
+@media only screen and (max-width: 370px) {
+  .card {
+    width: 270px;
+  
+}
+
+
+}
+@media only screen and (max-width: 350px) {
+  main .forget-form {
+    
+    width: 300px;
+    height: 300px;
+  
+}
+
+
+}
