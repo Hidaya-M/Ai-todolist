@@ -28,6 +28,10 @@ const Profile = () => {
         // ...
       });
   };
+  const deleteBTN= () => {
+    console.log("")
+  };
+  
 
   // loading
   // error
@@ -101,7 +105,7 @@ const Profile = () => {
                     date={user.metadata.creationTime}
                   />
                 </p>
-                <Buttonred Delateuser={Delateuser}>
+                <Buttonred Delateuser={Delateuser}  deleteBTN ={deleteBTN}>
                   {t("deleteaccount")}
                 </Buttonred>
               </div>
@@ -147,7 +151,7 @@ const Profile = () => {
                     date={user.metadata.creationTime}
                   />
                 </p>
-                <Buttonred Delateuser={Delateuser}>
+                <Buttonred Delateuser={Delateuser}  deleteBTN ={deleteBTN}>
                   {t("deleteaccount")}
                 </Buttonred>
               </div>
@@ -193,7 +197,7 @@ const Profile = () => {
                     date={user.metadata.creationTime}
                   />
                 </p>
-                <Buttonred Delateuser={Delateuser}>
+                <Buttonred Delateuser={Delateuser}   deleteBTN ={deleteBTN} >
                   {t("deleteaccount")}
                 </Buttonred>
               </div>
@@ -209,3 +213,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
